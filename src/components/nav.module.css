@@ -1,0 +1,84 @@
+/* Mobile-first navigation. Show "hamburger" icon by default.
+*/
+
+.nav li {
+  list-style: none;
+}
+
+.icon {
+  font-size: 3rem;
+  line-height: 0.02rem;
+  position: absolute;
+  margin-top: 1em;
+  right: 4vw;
+}
+
+.icon:before {
+  content: '\2261';
+  display: block;
+}
+
+
+.item {
+  min-width: 1%;
+  text-align: left;
+}
+
+
+/* Larger screens will have the navigation at the top.
+*/
+@media all and (min-width: 769px) {
+
+  .nav {
+    grid-column-start: 2;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .nav ul {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    display: inline-block;
+
+    margin: 0 0.2vw 0 0;
+    min-width: 2.25rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .icon,
+  .icon:before {
+    display: none;
+  }
+
+  .hidden {
+    clip: auto;
+    height: auto;
+    position: static;
+    width: 100%;
+  }
+
+}
+
+/* Color theme */
+
+.nav {
+  background: transparent;
+}
+
+.nav a:hover,
+.nav a:focus {
+  text-shadow: var(--global-body-linkHoverShadow);
+  font-weight: 800;
+}
+
+.icon {
+  color: #fff;
+  text-shadow: 1px 1px 2px #263056;
+}

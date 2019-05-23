@@ -1,0 +1,17 @@
+
+/* Portfolio page.
+*/
+
+.roles {
+  list-style: none;
+  padding: 0;
+}
+
+.roles li {
+  background: #6f80bf;
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-left: 0;
+  padding: 0.5rem;
+}
