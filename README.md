@@ -5,9 +5,9 @@ The Two Banjos At Once web site, rendered by [Gatsby.js](https://https://www.gat
 ## Installation
 
 Clone or download this repository.
+
 ```bash
-cd two-banjos-gatsby
-gatsby build
+git clone https://github.com/mejarc/two-banjos-gatsby.git
 ```
 
 Create a build from the repository source.
@@ -20,9 +20,10 @@ gatsby build
 
 Start the local server.
 ```bash
+cd two-banjos-gatsby
 gatsby serve
 ```
-View the local site at [localhost:9000](localhost:9000).
+View the local site at [localhost:9000](http://localhost:9000).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
