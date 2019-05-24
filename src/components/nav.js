@@ -2,12 +2,17 @@ import React from 'react';
 import { Link } from 'gatsby';
 import navStyles from './nav.module.css';
 
-const toggleIcon = () => {
+
+export default class Nav extends React.Component {
+
+toggleIcon = () => {
   let hidden = document.querySelector('.hidden');
   hidden.classList.toggle('show');
 };
-export default () => (
-  <nav className={navStyles.nav} role="navigation" onClick={toggleIcon}>
+
+  render() {
+    return (
+   <nav className={navStyles.nav} role="navigation" onClick={this.toggleIcon}>
       <span aria-hidden="true" className={navStyles.icon}></span>
       <ul className={`hidden`}>
         <li className={navStyles.item}><Link activeClassName="active" to="/about-me/">About me</Link></li>
@@ -16,4 +21,6 @@ export default () => (
         <li className={navStyles.item}><Link  activeClassName="active" to="/about-site/">About this web site</Link></li>
         </ul>
     </nav>
-);
+    )
+  }
+}

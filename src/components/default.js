@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <div><h2>
-          M. Archer 
+          Melanie Archer 
       </h2>
       <p>I am a front-end developer (JavaScript, CSS) working on projects in the U.S. Pacific time zone (UTC-7).</p>
       
