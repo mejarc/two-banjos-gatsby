@@ -12,9 +12,8 @@ toggleIcon = () => {
 
   render() {
     return (
-   <nav className={navStyles.nav} role="navigation" onClick={this.toggleIcon}>
-      <span aria-hidden="true" className={navStyles.icon}></span>
-      <ul className={`hidden`}>
+   <nav className={navStyles.nav} role="navigation">
+      <ul>
         <li className={navStyles.item}><Link activeClassName="active" to="/about-me/">About me</Link></li>
         <li className={navStyles.item}><Link  activeClassName="active" to="/portfolio/">Portfolio</Link></li>
         <li className={navStyles.item}><a href="mailto:mejarc@gmail.com?subject=ping%20from%20twobanjos">Ping</a></li>
