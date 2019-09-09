@@ -17,7 +17,21 @@ cd two-banjos-gatsby
 gatsby build
 ```
 ## Usage
+### Development
 
+Update or create files in /src.
+```bash
+cd two-banjos-gatsby/src
+````
+
+Start the local development server.
+```bash
+cd two-banjos-gatsby
+gatsby develop
+```
+View the local site at [localhost:8000](http://localhost:8000).
+
+### Production
 Start the local server.
 ```bash
 cd two-banjos-gatsby
