@@ -10,7 +10,9 @@
 .nav { 
   grid-column: 1 / span 2;
   grid-row: 3;
+  margin-bottom: 4vh;
 }
+
 .nav li {
   list-style: none;
 }
@@ -21,7 +23,7 @@
   grid-template-columns: repeat(4, 1fr);
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items: top;
 }
 
 .icon {
@@ -46,6 +48,7 @@
     grid-column-start: 2;
     grid-row: 1;
     margin-top: 0;
+    margin-bottom: 0;
     position: relative;
   }
 
@@ -67,9 +70,6 @@
 
 /* Color theme */
 
-.nav {
-  background: transparent;
-}
 
 .nav a:hover,
 .nav a:focus {
