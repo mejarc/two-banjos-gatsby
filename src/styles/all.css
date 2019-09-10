@@ -125,7 +125,7 @@ a:focus,
 
 
 body {
-  background-image: linear-gradient(to bottom, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 24%, rgba(181, 186, 182, 0.55) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 10rem, rgba(181, 186, 182, 0.55) 100%);
   color: var(--global-body-textColor);
 }
 
