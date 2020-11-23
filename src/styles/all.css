@@ -5,36 +5,7 @@
   --global-body-linkShadow: 0 1px 0 rgba(var(--global-body-linkColor), 0.4);
   --global-body-linkHoverShadow: 1px 1px 5px rgb(154, 151, 56);
 }
-/* Utilities.
-*/
 
-.center {
-  text-align: center;
-}
-
-.hidden {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: 1.33rem;
-  width: 1px;
-  transition: height 0.4s ease-in;
-  transition: width 0.15s linear;
-}
-
-.hidden.show {
-  clip: auto;
-  height: auto;
-  position: relative;
-  width: 100%;
-}
-
-.plain {
-  font-weight: 400;
-  list-style: none;
-  text-decoration: none;
-}
 
 /* Establishes the font face in use.
 */
@@ -50,13 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: auto;
-}
-
-nav,
-h1,
-h2,
-dt {
-  text-transform: uppercase;
 }
 
 h1 {
@@ -91,10 +55,9 @@ p {
 
 .page {
   display: grid;
-  grid-gap: 1em;
   padding: 2vw;
-  min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  place-items: center;
 }
 
 
@@ -110,7 +73,6 @@ main {
 
 a {
   transition: all 0.8s ease;
-  text-shadow: var(--global-body-linkShadow);
   color: var(--global-body-linkColor);
   text-decoration: none;
 }
@@ -119,12 +81,11 @@ a:hover,
 a:focus,
 .active {
   color: var(--global-body-linkColor);
-  text-shadow: var(--global-body-linkHoverShadow);
 }
 
 
 body {
-  background-image: linear-gradient(to bottom, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 15%, rgba(181, 186, 182, 0.55) 100%);
+ 
   color: var(--global-body-textColor);
 }
 
@@ -140,30 +101,11 @@ dd p {
 }
 
 
-main header {
-  color: #282827;
-  text-shadow: none;
-}
-
-
 
 
 /* Larger screens.
 */
 @media all and (min-width: 769px) {
 
-body {
-  background-image: linear-gradient(to right, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 44%, rgba(181, 186, 182, 0.55) 100%);
-}
-
-  main {
-    grid-column: 2;
-  }
-  .hidden {
-    clip: auto;
-    height: auto;
-    position: static;
-    width: 100%;
-  }
 
 }

@@ -11,7 +11,8 @@ export default ({ children }) => (
 <Nav />
 <main>
   { children }
-<Footer />
 </main>
+<Footer />
+
 </div>
 );
