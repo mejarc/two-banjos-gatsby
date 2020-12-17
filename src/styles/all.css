@@ -1,9 +1,12 @@
 
 :root {
-  --global-body-textColor: rgb(74, 72, 67);
-  --global-body-linkColor: rgba(38,48, 86, 1);
-  --global-body-linkShadow: 0 1px 0 rgba(var(--global-body-linkColor), 0.4);
-  --global-body-linkHoverShadow: 1px 1px 5px rgb(154, 151, 56);
+  /* --global-body-textColor: #363945; */
+--global-body-textColor: #fff;
+  --global-body-linkColor: #fff;
+  --global-body-linkShadow: rgba(231, 233, 231, .8);
+  --global-body-linkHoverShadow: rgba(245, 223, 77, 1);
+  --global-body-background-color: #343540;
+  --global-body-background-grid: rgba( 147, 149, 151, .2);
 }
 
 
@@ -75,17 +78,30 @@ a {
   transition: all 0.8s ease;
   color: var(--global-body-linkColor);
   text-decoration: none;
+  text-shadow: 1px 1px 1px var(--global-body-linkShadow);
 }
 
 a:hover,
 a:focus,
 .active {
   color: var(--global-body-linkColor);
+  text-shadow: 1px 1px 1px var(--global-body-linkShadow),
+               2px 2px 4px var(--global-body-linkHoverShadow);
 }
 
 
 body {
- 
+ /* Cross-dots. Cf. https://projects.verou.me/css3patterns/#cross-dots */
+ background:
+   radial-gradient(var(--global-body-background-grid) 3px, transparent 4px),
+   radial-gradient(var(--global-body-background-grid) 3px, transparent 4px),
+   linear-gradient(var(--global-body-background-color) 4px, transparent 0),
+   linear-gradient(45deg, transparent 74px, transparent 75px, var(--global-body-background-grid) 75px, var(--global-body-background-grid) 76px, transparent 77px, transparent 109px),
+   linear-gradient(-45deg, transparent 75px, transparent 76px, var(--global-body-background-grid) 76px, var(--global-body-background-grid) 77px, transparent 78px, transparent 109px);
+   background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+   background-color: var(--global-body-background-color);
+  
   color: var(--global-body-textColor);
 }
 
@@ -99,7 +115,6 @@ dd {
 dd p {
   margin-top: 0;
 }
-
 
 
 
