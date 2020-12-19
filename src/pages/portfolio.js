@@ -8,8 +8,27 @@ export default () => (
 <h2>Portfolio</h2>
 <p>Just a few of the sites and applications I've worked on.</p>
 <dl>
+
+<dt>
+  Cambria Center for the Arts
+  </dt>
+ <dd>
+  <p></p>
+  <ul className={portfolioStyles.roles}>
+    <li>javascript</li><li>html5</li><li>css</li>
+  </ul>
+ </dd>
+<dt>
+  Veeva Vault
+  </dt>
+ <dd>
+  <p></p>
+  <ul className={portfolioStyles.roles}>
+    <li>javascript</li><li>jquery</li><li>css</li>
+  </ul>
+ </dd>
  <dt>
-  <a href="//github.com/mejarc/auto-not">Auto-not</a>
+  Auto-not
   </dt>
  <dd>
   <p>Irritated into action by HTML5's <code>autoplay</code> attribute on <code>video</code> elements, I built a Chrome browser extension to zap these videos from a web page.</p>
@@ -18,7 +37,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//ge.geglobalresearch.com">GE Global Research</a>
+ GE Global Research
   </dt>
  <dd>
   <p>Wrangled an ornery herd of Grunt scripts, Bower packages,  and Twitter Bootstrap forks into the  <a href="http://www.creativebloq.com/netmag/using-bootstrap-complex-design-systems-7133781">Industrial Internet Design System (IIDS)</a>, a framework of browser-side components for Java and .NET developers  to use in their applications.
@@ -30,7 +49,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//thecloroxcompany.com">The Clorox Company</a>
+ The Clorox Company
   </dt>
  <dd>
   <p>Sprinkled oxygen atoms on the corporate site for probably the best known brand of bleach on the planet. I contributed new markup and debugged  CSS rules to an existing site served up by PHP.
@@ -41,7 +60,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//freshstep.com">Fresh Step</a>
+  Fresh Step
   </dt>
  <dd>
   <p>Was handed a few debugging issues on a catchy, consumer-oriented site with lots of HTML5/CSS3/jQuery doodads. My bigger task: maintaining focus while proofreading Web copy about desirable properties in cat litter.</p>
@@ -52,7 +71,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//www.sungevity.com">Sungevity iQuote</a>
+Sungevity iQuote
   </dt>
  <dd>
   <p>Assigned maintenance on musty outsourced HTML. More exciting was my task of reworking it all into the newest version of the CakePHP framework. Best of all was experiencing Agile project management as it's really supposed to be practiced.</p>
@@ -61,12 +80,10 @@ export default () => (
     <li>php</li>
   </ul>
  </dd>
-</dl>
-<h2>Previously</h2>
-<dl>
+
 
  <dt>
-  <a href="">Zvents</a>
+ Zvents
   </dt>
  <dd>
   <p>My assignment: a problematic jQuery carousel (aren't they all?). I performed incredible CSS gymnastics to align a speech-bubble-like element <em>just so</em> cross-browser.</p>
@@ -76,7 +93,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//nexant.com/">Nexant TrakSmart</a>
+  Nexant TrakSmart
   </dt>
  <dd>
   <p>I devised rather straightforward HTML forms, and placed them into ICEFaces/JSF templates. Made me more appreciative of Rails.</p>
@@ -85,7 +102,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="">Smartleaf</a>
+Smartleaf
   </dt>
  <dd>
   <p>I created interface elements for a remarkably abstruse application for some obscure form of investing you and I will probably never make. Really gained appreciation for what genius interface designers like Gino Lee can do with such difficult requirements.</p>
@@ -96,7 +113,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="">Smart.fm</a>
+ Smart.fm
   </dt>
  <dd>
   <p>Was given carte blanche to ignore all versions of Internet Explorer, and subequently went crazy with standard and vendor-prefixed CSS3 for a hip language-learning application with a demanding user base of Japanese teenagers.</p>
@@ -106,7 +123,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//limos.com/">Limos.com</a>
+  Limos.com
   </dt>
  <dd>
   <p>Enjoyed the back-and-forth of a small development team (four of us) and work organized sensibly by Agile-type user stories.</p>
@@ -117,7 +134,7 @@ export default () => (
   </ul>
  </dd>
  <dt>
-  <a href="//tripit.com">TripIt</a>
+  TripIt
   </dt>
  <dd>
   <p>Joined two other developers and the two company founders at one big table; found this to be a really productive and satisfying setup. Lots of quick changes to Symfony (PHP) templates in CSS and YUI JavaScript modules.</p>
@@ -127,9 +144,7 @@ export default () => (
     <li>php</li>
   </ul>
  </dd>
-</dl>
-<h2>R.I.P.</h2>
-<dl>
+
   <dt>Vox Blog Themes</dt>
   <dd>
     <p>Sigh. This was a great project: to separate markup and design so completely that a user could change her blog theme with the click of one button. We were clobbered by Facebook.</p>
@@ -140,7 +155,7 @@ export default () => (
   </dd>
   <dt>Errands On The Way</dt>
   <dd>
-    <p>I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development.</p>
+    <p>I joined Jason, Christine, and Ryan in a very satisfying  week of test-driven development, on a mobile-first Rails application helping the user find places to fulfill her errands along a given route.</p>
     <ul className={portfolioStyles.roles}>
       <li>rails</li>
       <li>ruby</li>
@@ -176,7 +191,16 @@ export default () => (
       <li>css</li>
     </ul>
   </dd>
+  <dt>The Addis Group</dt>
+  <dd>
+    <p></p>
+    <ul className={portfolioStyles.roles}>
+      <li>css</li>
+      <li>php</li>
+      <li>html</li>
+    </ul>
+  </dd>
 </dl>
-</Layout>  
+</Layout>
 );
 
