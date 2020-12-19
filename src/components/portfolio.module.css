@@ -8,7 +8,7 @@
 }
 
 .roles li {
-  background: #6f80bf;
+  background: var(--portfolio-filter-background);
   border: 1px solid #dadada;
   border-radius: 0.25rem;
   display: inline-block;
