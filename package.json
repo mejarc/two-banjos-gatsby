@@ -15,7 +15,6 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "core-js": "^3.6.5",
-    "fontsource-piazzolla": "^3.0.3",
     "gatsby": "^2.27.0",
     "gatsby-cli": "^2.16.1",
     "gatsby-plugin-manifest": "^2.4.34",
