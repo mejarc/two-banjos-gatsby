@@ -1,47 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-
 :root {
-  --global-body-textColor: rgb(74, 72, 67);
-  --global-body-linkColor: rgba(38,48, 86, 1);
-  --global-body-linkShadow: 0 1px 0 rgba(var(--global-body-linkColor), 0.4);
-  --global-body-linkHoverShadow: 1px 1px 5px rgb(154, 151, 56);
-}
-/* Utilities.
-*/
-
-.center {
-  text-align: center;
+  --global-body-textColor: rgba(231, 233, 231, 1.0);
+  --global-body-linkColor: rgba(231, 233, 231, 1.0);
+  --global-body-textShadow:black;
+  --global-body-linkHoverShadow: rgba(245, 223, 77, 0.6);
+  --global-body-background-color: #343540;
+  --global-body-background-grid: rgba(147, 149, 151, 0.2);
 }
 
-.hidden {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: 1.33rem;
-  width: 1px;
-  transition: height 0.4s ease-in;
-  transition: width 0.15s linear;
-}
-
-.hidden.show {
-  clip: auto;
-  height: auto;
-  position: relative;
-  width: 100%;
-}
-
-.plain {
-  font-weight: 400;
-  list-style: none;
-  text-decoration: none;
-}
+html {
+  scroll-behavior: smooth;
+  }
 
 /* Establishes the font face in use.
 */
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.12em;
   /* better font smoothing, thanks @hsleonis,
@@ -52,14 +26,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: auto;
 }
-
-nav,
 h1,
 h2,
-dt {
-  text-transform: uppercase;
+h3 {
+  font-family: "Trirong", serif;
 }
-
 h1 {
   font-size: 1.5em;
 }
@@ -72,7 +43,6 @@ h3 {
   font-size: 1em;
 }
 
-
 p {
   margin-bottom: 2em;
 }
@@ -80,8 +50,6 @@ p {
 /* Larger screens get bigger fonts
 */
 @media all and (min-width: 770px) {
-
-
   h2 {
     font-size: 1.5em;
   }
@@ -92,12 +60,10 @@ p {
 
 .page {
   display: grid;
-  grid-gap: 1em;
   padding: 2vw;
-  min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  place-items: center;
 }
-
 
 header {
   grid-row: 1;
@@ -111,7 +77,6 @@ main {
 
 a {
   transition: all 0.8s ease;
-  text-shadow: var(--global-body-linkShadow);
   color: var(--global-body-linkColor);
   text-decoration: none;
 }
@@ -120,13 +85,42 @@ a:hover,
 a:focus,
 .active {
   color: var(--global-body-linkColor);
-  text-shadow: var(--global-body-linkHoverShadow);
+  text-shadow: 1px 1px 1px var(--global-body-textShadow),
+    2px 2px 4px var(--global-body-linkHoverShadow);
 }
 
-
 body {
-  background-image: linear-gradient(to bottom, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 15%, rgba(181, 186, 182, 0.55) 100%);
+  /* Cross-dots. Cf. https://projects.verou.me/css3patterns/#cross-dots */
+  background: radial-gradient(
+      var(--global-body-background-grid) 3px,
+      transparent 4px
+    ),
+    radial-gradient(var(--global-body-background-grid) 3px, transparent 4px),
+    linear-gradient(var(--global-body-background-color) 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      var(--global-body-background-grid) 75px,
+      var(--global-body-background-grid) 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      var(--global-body-background-grid) 76px,
+      var(--global-body-background-grid) 77px,
+      transparent 78px,
+      transparent 109px
+    );
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-color: var(--global-body-background-color);
+
   color: var(--global-body-textColor);
+  text-shadow: 1px 1px 1px var(--global-body-textShadow);
 }
 
 
@@ -135,36 +129,20 @@ dd {
   margin-left: 0;
 }
 
-
 dd p {
   margin-top: 0;
 }
-
-
-main header {
-  color: #282827;
-  text-shadow: none;
+ol,
+ol li {
+  list-style: none;
 }
 
-
-
-
+.carousel-snapper { display: none; }
 /* Larger screens.
 */
-@media all and (min-width: 769px) {
+  @media all and (min-width: 770px) {
 
-body {
-  background-image: linear-gradient(to right, rgba(255, 111, 97, .95) 0%, rgba(181, 186, 182, 1.0) 44%, rgba(181, 186, 182, 0.55) 100%);
-}
-
-  main {
-    grid-column: 2;
+    header h1 {
+      font-size: 2.25em;
+    }
   }
-  .hidden {
-    clip: auto;
-    height: auto;
-    position: static;
-    width: 100%;
-  }
-
-}

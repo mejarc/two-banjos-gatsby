@@ -3,6 +3,7 @@ module.exports = {
     title: "Two Banjos At Once."
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,182 +1,182 @@
 /* eslint-disable */
-import React from "react";
-import Layout from '../components/layout';
-import portfolioStyles from '../components/portfolio.module.css';
+import React from "react"
+import Layout from "../components/layout"
 
 export default () => (
- <Layout>
-<h2>Portfolio</h2>
-<p>Just a few of the sites and applications I've worked on.</p>
-<dl>
- <dt>
-  <a href="//github.com/mejarc/auto-not">Auto-not</a>
-  </dt>
- <dd>
-  <p>Irritated into action by HTML5's <code>autoplay</code> attribute on <code>video</code> elements, I built a Chrome browser extension to zap these videos from a web page.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>javascript</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//ge.geglobalresearch.com">GE Global Research</a>
-  </dt>
- <dd>
-  <p>Wrangled an ornery herd of Grunt scripts, Bower packages,  and Twitter Bootstrap forks into the  <a href="http://www.creativebloq.com/netmag/using-bootstrap-complex-design-systems-7133781">Industrial Internet Design System (IIDS)</a>, a framework of browser-side components for Java and .NET developers  to use in their applications.
-</p>
-<ul className={portfolioStyles.roles}>
-    <li>javascript</li>
-    <li>html5</li>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//thecloroxcompany.com">The Clorox Company</a>
-  </dt>
- <dd>
-  <p>Sprinkled oxygen atoms on the corporate site for probably the best known brand of bleach on the planet. I contributed new markup and debugged  CSS rules to an existing site served up by PHP.
-</p>
-<ul className={portfolioStyles.roles}>
-    <li>html5</li>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//freshstep.com">Fresh Step</a>
-  </dt>
- <dd>
-  <p>Was handed a few debugging issues on a catchy, consumer-oriented site with lots of HTML5/CSS3/jQuery doodads. My bigger task: maintaining focus while proofreading Web copy about desirable properties in cat litter.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>javascript</li>
-    <li>jquery</li>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//www.sungevity.com">Sungevity iQuote</a>
-  </dt>
- <dd>
-  <p>Assigned maintenance on musty outsourced HTML. More exciting was my task of reworking it all into the newest version of the CakePHP framework. Best of all was experiencing Agile project management as it's really supposed to be practiced.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>css</li>
-    <li>php</li>
-  </ul>
- </dd>
-</dl>
-<h2>Previously</h2>
-<dl>
+  <Layout>
+    <h2>Portfolio</h2>
+    <p>Some details on a few of the sites and applications I've worked on.</p>
 
- <dt>
-  <a href="">Zvents</a>
-  </dt>
- <dd>
-  <p>My assignment: a problematic jQuery carousel (aren't they all?). I performed incredible CSS gymnastics to align a speech-bubble-like element <em>just so</em> cross-browser.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>jquery</li>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//nexant.com/">Nexant TrakSmart</a>
-  </dt>
- <dd>
-  <p>I devised rather straightforward HTML forms, and placed them into ICEFaces/JSF templates. Made me more appreciative of Rails.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="">Smartleaf</a>
-  </dt>
- <dd>
-  <p>I created interface elements for a remarkably abstruse application for some obscure form of investing you and I will probably never make. Really gained appreciation for what genius interface designers like Gino Lee can do with such difficult requirements.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>html5</li>
-    <li>css</li>
-    <li>jquery</li>
-  </ul>
- </dd>
- <dt>
-  <a href="">Smart.fm</a>
-  </dt>
- <dd>
-  <p>Was given carte blanche to ignore all versions of Internet Explorer, and subequently went crazy with standard and vendor-prefixed CSS3 for a hip language-learning application with a demanding user base of Japanese teenagers.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>jquery</li>
-    <li>css</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//limos.com/">Limos.com</a>
-  </dt>
- <dd>
-  <p>Enjoyed the back-and-forth of a small development team (four of us) and work organized sensibly by Agile-type user stories.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>jquery</li>
-    <li>css</li>
-    <li>rails</li>
-  </ul>
- </dd>
- <dt>
-  <a href="//tripit.com">TripIt</a>
-  </dt>
- <dd>
-  <p>Joined two other developers and the two company founders at one big table; found this to be a really productive and satisfying setup. Lots of quick changes to Symfony (PHP) templates in CSS and YUI JavaScript modules.</p>
-  <ul className={portfolioStyles.roles}>
-    <li>css</li>
-    <li>javascript</li>
-    <li>php</li>
-  </ul>
- </dd>
-</dl>
-<h2>R.I.P.</h2>
-<dl>
-  <dt>Vox Blog Themes</dt>
-  <dd>
-    <p>Sigh. This was a great project: to separate markup and design so completely that a user could change her blog theme with the click of one button. We were clobbered by Facebook.</p>
-    <ul className={portfolioStyles.roles}>
-      <li>css</li>
-      <li>html</li>
-    </ul>
-  </dd>
-  <dt>Errands On The Way</dt>
-  <dd>
-    <p>I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development.</p>
-    <ul className={portfolioStyles.roles}>
-      <li>rails</li>
-      <li>ruby</li>
-      <li>css</li>
-      <li>javascript</li>
-      <li>rspec</li>
-      <li>jasmine</li>
-    </ul>
-  </dd>
-  <dt>Citizens for Community Health and Sustainability</dt>
-  <dd>
-    <p>Bilingual (English/Spanish) site for a nonprofit group in California's 11th Congressional district. I worked with yet another attractive design by <a href="//www.behance.net/rolfwilkinson">Rolf Wilkinson</a>.</p>
-    <ul className={portfolioStyles.roles}>
-      <li>css</li>
-      <li>html</li>
-    </ul>
-  </dd>
-  <dt>Zinkle</dt>
-  <dd>
-    <p>A search engine for children. Really! Designer Rachael Schafer ditched stereotypical screaming primary colors and drew cartoon critters instead. It really was endearing. All the results kid-appropriate.</p>
-    <ul className={portfolioStyles.roles}>
-      <li>css</li>
-      <li>php</li>
-      <li>html</li>
-    </ul>
-  </dd>
-  <dt>Spreecast</dt>
-  <dd>
-    <p>One of those rapid-fire, pre-beta startup development projects--worked with four other developers to solve the complex problem of delivering streaming video chat using Rails and Node.js. Decided to use Blueprint CSS, and everybody was glad.</p>
-    <ul className={portfolioStyles.roles}>
-      <li>jquery</li>
-      <li>html5</li>
-      <li>css</li>
-    </ul>
-  </dd>
-</dl>
-</Layout>  
-);
+    <section className="carousel" aria-label="Gallery">
+      <ol className="carousel-viewport">
+        <li className="carousel-slide" id="slide1">
+          <h3>Cambria Center for the Arts</h3>
+          <p>
+            A work in progress: front-end components for a vibrant, busy arts
+            center's Web site, serving up announcements, ticket sales, gallery
+            images, and event calendars.
+          </p>
 
+          <div className="carousel-snapper">
+            <a className="carousel-next" href="#slide3">
+              Next
+            </a>
+          </div>
+        </li>
+
+        <li className="carousel-slide" id="slide3">
+          <h3>Auto-not</h3>
+          <p>
+            Irritated into action by HTML5's <code>autoplay</code> attribute on
+            <code> video</code> elements, I built a Chrome browser extension to
+            zap these videos from a web page.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide1">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide4">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide4">
+          <h3>GE Global Research</h3>
+          <p>
+            Wrangled an ornery herd of Grunt scripts, Bower packages, and
+            Twitter Bootstrap forks into the{" "}
+            <a href="http://www.creativebloq.com/netmag/using-bootstrap-complex-design-systems-7133781">
+              Industrial Internet Design System (IIDS)
+            </a>
+            , a framework of browser-side components for Java and .NET
+            developers to use in their applications.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide3">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide5">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide5">
+          <h3>Fresh Step</h3>
+          <p>
+            Was handed a few debugging issues on a catchy, consumer-oriented
+            site with lots of HTML5/CSS3/jQuery doodads. My bigger task:
+            maintaining focus while proofreading Web copy about desirable
+            properties in cat litter.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide4">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide6">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide6">
+          <h3>Smartleaf</h3>
+          <p>
+            I created interface elements for a remarkably abstruse application
+            for some obscure form of investing you and I will probably never
+            make. Really gained appreciation for what genius user interface
+            designers like Gino Lee can do with such difficult requirements.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide5">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide7">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide7">
+          <h3>TripIt</h3>
+          <p>
+            Joined two other developers and the two company founders at one big
+            table; found this to be a really productive and satisfying setup.
+            Lots of quick changes to Symfony (PHP) templates in CSS and YUI
+            JavaScript modules.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide6">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide8">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide8">
+          <h3>Vox Blog Themes</h3>
+          <p>
+            Sigh. This was a great project: to separate markup and design so
+            completely that a user could change her blog theme with the click of
+            one button. We were clobbered by Facebook.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide7">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide9">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide9">
+          <h3>Errands On The Way</h3>
+          <p>
+            I joined Jason, Christine, and Ryan in a very satisfying week of
+            test-driven development, on a mobile-first Rails application helping
+            the user find places to fulfill her errands along a given route.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide8">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide10">
+              Next
+            </a>
+          </div>
+        </li>
+
+        <li className="carousel-slide" id="slide10">
+          <h3>The Addis Group</h3>
+          <p>
+            Designed and built a content management system (CMS) to enable this
+            award-winning branding agency to update its redeveloped Web site
+            with high-quality images and content.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide9">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide11">
+              Next
+            </a>
+          </div>
+        </li>
+        <li className="carousel-slide" id="slide11">
+          <h3>City of Houston</h3>
+          <p>
+            Served all visitors to the redesigned site for the 4th largest city
+            in the U.S. with fully accessible (Section 508/WCAG AA) markup and
+            CSS.
+          </p>
+          <div className="carousel-snapper">
+            <a className="carousel-prev" href="#slide10">
+              Previous
+            </a>
+            <a className="carousel-next" href="#slide1">
+              Next
+            </a>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </Layout>
+)
