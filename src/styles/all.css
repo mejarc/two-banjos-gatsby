@@ -7,6 +7,10 @@
   --global-body-background-grid: rgba(147, 149, 151, 0.2);
 }
 
+html {
+  scroll-behavior: smooth;
+  }
+
 /* Establishes the font face in use.
 */
 
