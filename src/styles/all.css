@@ -70,6 +70,7 @@ header {
 }
 main {
   grid-row: 2;
+  width: 80vw;
 }
 
 /* Colors and effects.
@@ -123,21 +124,14 @@ body {
   text-shadow: 1px 1px 1px var(--global-body-textShadow);
 }
 
-
-dd {
-  margin-bottom: 3em;
-  margin-left: 0;
+details[open] summary ~ * {
+  animation: sweep .8s ease-in-out;
 }
 
-dd p {
-  margin-top: 0;
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
 }
-ol,
-ol li {
-  list-style: none;
-}
-
-.carousel-snapper { display: none; }
 /* Larger screens.
 */
   @media all and (min-width: 770px) {
